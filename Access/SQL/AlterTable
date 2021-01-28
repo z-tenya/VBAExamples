@@ -1,0 +1,4 @@
+'To reset (reseed) autonumber field
+Alter table [tableName] alter column [AutonumberColumnName] AutoIncrement([start],[step])
+'e.g. "Alter table MyTable alter column RowId AutoIncrement(5,2)"
+'first inserted row will be with RowId=5, second - RowId=7 
